@@ -7,6 +7,42 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ice_pbru.khamhor.sirikwan.piano.MainActivity">
+    tools:context="ice_pbru.khamhor.sirikwan.piano.MainActivity"
+    android:background="@drawable/bg500">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PIANO"
+            android:id="@+id/textView"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#0fbef9"
+            android:background="#7de2eefb"
+            android:textIsSelectable="false" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/button2"
+                android:singleLine="false"
+                android:background="@drawable/bg" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
