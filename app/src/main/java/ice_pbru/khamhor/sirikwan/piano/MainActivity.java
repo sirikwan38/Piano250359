@@ -41,6 +41,100 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 MediaPlayer doMediaPlayer = MediaPlayer.create(getBaseContext(),R.raw.dosong);
                 doMediaPlayer.start();
+
+                doMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
+
+            }
+        });
+        reButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer reMediaPlayer = MediaPlayer.create(getBaseContext(),R.raw.resong);
+                reMediaPlayer.start();
+
+                reMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
+            }
+        });
+        miButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer miMediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.resong);
+                miMediaPlayer.start();
+
+                miMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
+
+
+            }
+        });
+        faButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer faMediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.fasong);
+                faMediaPlayer.start();
+
+                faMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
+            }
+        });
+        soButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer soMediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.sosong);
+                soMediaPlayer.start();
+
+                soMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
+            }
+        });
+        laButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer laMediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.lasong);
+                laMediaPlayer.start();
+
+                laMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
+            }
+        });
+        tiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer tiMediaPlaters = MediaPlayer.create(getBaseContext(),R.raw.tisong);
+                tiMediaPlaters.start();
+
+                tiMediaPlaters.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
             }
         });
 
@@ -50,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
     private void bindWidget() {
         doButton = (Button) findViewById(R.id.button1);
         reButton = (Button) findViewById(R.id.button2);
-        miButton = (Button) findViewById(R.id.button3);
+        miButton = (Button) findViewById(R.id.Button3);
         faButton = (Button) findViewById(R.id.button4);
         soButton = (Button) findViewById(R.id.button5);
         laButton = (Button) findViewById(R.id.button6);
